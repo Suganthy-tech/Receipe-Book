@@ -1,16 +1,16 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-sm-12">
   <button class="btn btn-success">New Receipe</button>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-sm-12">
     <a href="#" class="list-group-item clearfix" *ngFor="let receipe of receipeList">
-<div class="pull-left">
+<div class="float-sm-left">
   <h4 class="list-group-item-heading">{{receipe.name}}</h4>
   <p class="list-group-item-text">{{receipe.description}}</p>
 </div>
-<span>
+<span class="float-sm-right">
 <img src="{{receipe.imagePath}}" alt="{{receipe.name}}" style="max-height:50px;" class="img-responsive">
 </span>
     </a>
