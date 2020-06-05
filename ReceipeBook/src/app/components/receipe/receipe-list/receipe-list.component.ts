@@ -10,6 +10,11 @@ export class ReceipeListComponent implements OnInit {
     'A TestReceipe',
     'This is a simple test',
     'https://pinchofyum.com/wp-content/uploads/Moroccan-Chickpea-Bowls-4.jpg'
+  ) ,
+  new Receipe(
+    'A TestReceipe',
+    'This is a simple test',
+    'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/12/Shakshuka-19.jpg'
   ) ];
   constructor() { }
 
