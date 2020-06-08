@@ -1,3 +1,9 @@
-<p>
-  receipe-item works!
-</p>
+<a href="#" class="list-group-item clearfix">
+  <div class="float-sm-left">
+    <h4 class="list-group-item-heading">{{receipeItem.name}}</h4>
+    <p class="list-group-item-text">{{receipeItem.description}}</p>
+  </div>
+  <span class="float-sm-right">
+    <img src="{{receipeItem.imagePath}}" alt="{{receipeItem.name}}" style="max-height:15vh;" class="img-responsive">
+  </span>
+</a>

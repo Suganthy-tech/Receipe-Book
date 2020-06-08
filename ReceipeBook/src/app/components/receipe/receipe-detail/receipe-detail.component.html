@@ -1,11 +1,12 @@
 <div class="row">
   <div class="col-sm-12">
-    <img src="" alt="" class="img-thumbnail">
+    <img [src]="selectedReceipeDetails.imagePath" [alt]="selectedReceipeDetails.name" class="img-thumbnail"
+      style="max-height:50vh;">
   </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <h1>Receipe Name</h1>
+    <h1>{{selectedReceipeDetails.name}}</h1>
   </div>
 </div>
 <div class="row">
@@ -20,7 +21,7 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    Description
+    {{selectedReceipeDetails.description}}
   </div>
 </div>
 <div class="row">

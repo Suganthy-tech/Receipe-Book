@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Receipe } from './receipe.modal';
 
 @Component({
   selector: 'app-receipe',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./receipe.component.css']
 })
 export class ReceipeComponent implements OnInit {
-
+  selectedReceipe: Receipe;
   constructor() { }
 
   ngOnInit() {
   }
+  selectedreceipe(receipe: Receipe) {
+    this.selectedReceipe = receipe;
 
+  }
 }
