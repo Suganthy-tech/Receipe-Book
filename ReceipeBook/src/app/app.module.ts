@@ -10,6 +10,7 @@ import { ReceipeItemComponent } from './components/receipe/receipe-item/receipe-
 import { ReceipeListComponent } from './components/receipe/receipe-list/receipe-list.component';
 import { ShoppingListEditComponent } from './components/shopping-list/shopping-list-edit/shopping-list-edit.component';
 import { HeaderComponent } from './components/header/header.component';
+import { appDropdownDirective } from './components/shared/appdropdown.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HeaderComponent } from './components/header/header.component';
     ReceipeItemComponent,
     ReceipeListComponent,
     ShoppingListEditComponent,
-    HeaderComponent
+    HeaderComponent, appDropdownDirective
   ],
   imports: [
     BrowserModule,
