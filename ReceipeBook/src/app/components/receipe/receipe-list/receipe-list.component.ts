@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Receipe } from '../receipe.modal';
+import { receipeService } from '../receipe.service';
 
 @Component({
   selector: 'app-receipe-list',
@@ -7,23 +8,13 @@ import { Receipe } from '../receipe.modal';
   styleUrls: ['./receipe-list.component.css']
 })
 export class ReceipeListComponent implements OnInit {
-  @Output() selectedreceipe = new EventEmitter<Receipe>();
-  public receipeList: Receipe[] = [new Receipe(
-    'A TestReceipe',
-    'This is a simple test',
-    'https://pinchofyum.com/wp-content/uploads/Moroccan-Chickpea-Bowls-4.jpg'
-  ),
-  new Receipe(
-    'A TestReceipe',
-    'This is a simple test',
-    'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/12/Shakshuka-19.jpg'
-  )];
-  constructor() { }
+  public receipeList: Receipe[];
+  constructor(private receipeservice: receipeService) { }
 
   ngOnInit() {
+    this.receipeList = this.receipeservice.getReceipeList();
   }
   onClickReceipe(receipe: Receipe) {
-    this.selectedreceipe.emit(receipe);
-
+    this.receipeservice.selectedReceipe.emit(receipe);
   }
 }
