@@ -12,6 +12,8 @@ import { ShoppingListEditComponent } from './components/shopping-list/shopping-l
 import { HeaderComponent } from './components/header/header.component';
 import { appDropdownDirective } from './components/shared/appdropdown.directive';
 import { shoppingListService } from './components/shopping-list/shopping-list.service';
+import { ReceipeStartComponent } from './components/receipe/receipe-start/receipe-start.component';
+import { ReceipeEditComponent } from './components/receipe/receipe-edit/receipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { shoppingListService } from './components/shopping-list/shopping-list.se
     ReceipeItemComponent,
     ReceipeListComponent,
     ShoppingListEditComponent,
-    HeaderComponent, appDropdownDirective
+    HeaderComponent, appDropdownDirective, ReceipeStartComponent, ReceipeEditComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,9 @@ export class receipeService {
         'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/12/Shakshuka-19.jpg', [new Ingredient('Chenna', 2), new Ingredient('malasa packet', 1)]
 
     )];
+    getReceipeById(index: number) {
+        return this.receipeList.slice()[index];
+    }
     getReceipeList() {
         return this.receipeList.slice();
     }

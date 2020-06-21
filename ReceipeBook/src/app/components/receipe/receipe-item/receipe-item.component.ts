@@ -8,6 +8,7 @@ import { Receipe } from '../receipe.modal';
 })
 export class ReceipeItemComponent implements OnInit {
   @Input() receipeItem: Receipe;
+  @Input() index: number;
   constructor() { }
 
   ngOnInit() {

@@ -1,11 +1,12 @@
 <div class="row">
   <div class="col-sm-12">
-    <button class="btn btn-success btn-sm">New Receipe</button>
+    <button class="btn btn-success btn-sm" (click)="onNewReceipeClick()">New Receipe</button>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <app-receipe-item *ngFor="let receipe of receipeList" [receipeItem]="receipe" (click)="onClickReceipe(receipe)">
+    <app-receipe-item *ngFor="let receipe of receipeList;let i=index" [receipeItem]="receipe" [index]="i"
+      (click)="onClickReceipe(receipe)">
     </app-receipe-item>
   </div>
 </div>
